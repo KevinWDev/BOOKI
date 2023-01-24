@@ -1,14 +1,49 @@
 body {
     width: 1400px;
     margin: auto;
+    border: 1px solid green;
 }
 
 * {
     margin: 0;
+    
+}
+
+/* HEADER */
+header img {
+    width: 61px;
+    height: 19px;
+    margin: 44px 0 0 55px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid red;
+    margin-bottom: 89px;
+}
+
+nav {
+    
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    margin-right: 77px; 
 }
 
 
-.test {
+
+/* .test {
     display: flex;
     align-items: center;
     position: relative;
@@ -43,7 +78,7 @@ body {
     position: absolute;
     left: 21px;
     color: #0065fc;
-}
+} */
 
  
 
