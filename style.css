@@ -1,6 +1,7 @@
 body {
     width: 1400px;
     margin: auto;
+    font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
     /* border: 1px solid green; */
 }
 
@@ -8,6 +9,12 @@ body {
     margin: 0;
 }
 
+/* Balise générique */
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+/* HEADER */
 header img {
     width: 61px;
     height: 19px;
@@ -21,7 +28,7 @@ header {
     border: 1px solid red;
     margin-bottom: 89px;
 }
-
+/* Navigation */
 nav {
     margin: 0;
 }
@@ -37,8 +44,6 @@ nav a {
     border-top: 2px solid blue;
     border: 1px solid black;
     color: black;
-
-
 }
 
 nav li {
@@ -53,13 +58,12 @@ nav li {
     margin-bottom: 20px;
 }
 
+/* Recherche */
 .search {
     display: flex;
     position: relative;
     width: 464px;
 }
-
-
 
 .search input[type="submit"] {
     background: #0065FC;
@@ -71,17 +75,15 @@ nav li {
     position: absolute;
     right: 46px;
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;   
 }
 
- .position-search input{
+ .position-search input {
     width: 322px;
     height: 49px;
     border-radius: 15px;
     background-color: white;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: black;
@@ -91,7 +93,6 @@ nav li {
  ::placeholder {
     color: black;
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
  }
 
@@ -106,7 +107,7 @@ nav li {
 
 
 
-
+/* Filters (form-filters) */
 .position-div-filtre {
     display: flex;
     align-items: center;
@@ -125,7 +126,6 @@ nav li {
     display: flex;
     justify-content: flex-end;
     background: white;
-    font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
 }
 
 .position-div-filtre [value="Économique"],[value="Romantique"] { 
@@ -146,10 +146,10 @@ nav li {
     display: flex;
     align-items: center;
     margin-left: 62px;
+    margin-bottom: 38px;
 }
 .form-filtre h2 {
     font-size: 1.1em;
-    font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
 }
 
 .form-filtre h2, .form-filtre div {
@@ -168,8 +168,28 @@ nav li {
     color: #0065fc;
 }
 
+/* Info logement */
+.info-logement {
+    display: flex;
+    margin-left: 59px;
+    margin-bottom: 39px;
+}
+
+.icons-info {
+    color: white;
+    background: #0065FC;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    margin-right: 11px;
+}
 
 
+main {
+    border: 1px solid red;
+    background: #F2F2F2;
  
+    
+}
+
 
 
