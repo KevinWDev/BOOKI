@@ -8,8 +8,6 @@ body {
     margin: 0;
 }
 
-
-
 /* Balise générique */
 main {
     margin-left: 50px;
@@ -100,23 +98,32 @@ nav a:hover {
     right: 46px;
     font-size: 18px;
     font-weight: 700;   
+
 }
 
+
  .position-search input {
-    width: 322px;
+    /* width: 322px; */
+    width: 283px;
     height: 49px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    border-radius: 15px 0 0 15px;
     background-color: white;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
     border: 1px solid #F2F2F2;
     outline: none;
+    
  }
 
  ::placeholder {
     color: black;
  }
+
+ *:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
 
 .icons-position-search{
     border: 1px solid #F2F2F2;
@@ -144,9 +151,8 @@ nav a:hover {
     border: 2px solid #D9D9D9;
     display: flex;
     justify-content: flex-end;
-    background: white;
+    background: white; 
 }
-
 .position-div-filtre [value="Économique"],[value="Romantique"] { 
     width: 175px;
     height: 48px;
@@ -155,31 +161,31 @@ nav a:hover {
     width: 136px;
     height: 48px;
 }
-
 .position-div-filtre [value="Animaux autorisés"] { 
     width: 226px;
     height: 48px;
+}
+
+.position-div-filtre input:hover {
+    background: #DEEBFF;
 }
 
 .form-filtre {
     display: flex;
     align-items: center;
     margin-left: 62px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 }
-
 .form-filtre h2, 
 .form-filtre div {
     margin-right: 39px;
 }
-
 .position-icons-filtre,
 .position-icons-filtre-animaux {
     position: absolute;
     color: #0065FC;
     left: 20px;
 }
-
 .position-icons-filtre-familial {
     position: absolute;
     left: 24px;
@@ -201,8 +207,9 @@ nav a:hover {
     margin-right: 11px;
 }
 
+
 /* MAIN */
-.left-right{
+.left-right {
     display: flex;
 }
 
@@ -210,7 +217,7 @@ nav a:hover {
 .left {
     border-radius: 20px;
     background: #F2F2F2;
-    width: 57%;
+    width: 59.50%;
     padding: 40px;
     margin-right: 40px;
 }
@@ -253,8 +260,8 @@ nav a:hover {
 .grid-1, .grid-2 {
     display: grid;
     grid-template-columns: 246px 246px 246px;
-    gap: 30px;   
-    
+    gap: 30px;  
+    width: max-content;
 }
 .card-image {
     width: 236px;
@@ -263,7 +270,7 @@ nav a:hover {
 
 .card-image img {
     width: 100%;
-    height: 100%;
+    height: 124px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     border: 5px solid #FFFFFF;
@@ -276,8 +283,8 @@ nav a:hover {
 .right {
     border-radius: 20px;
     background: #F2F2F2;
-    margin: 0;
     width: 30%;
+    margin: 0;
     padding: 40px 40px 0 40px;
 }
 
