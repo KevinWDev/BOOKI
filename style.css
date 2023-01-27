@@ -200,6 +200,7 @@ nav a:hover {
 }
 .afficher-plus {
     margin-top: 40px;
+    width: max-content;
 }
 .left h1 {
     margin-bottom: 23px;
@@ -208,7 +209,6 @@ nav a:hover {
    margin-bottom: 30px;
 }
 .card {
-    height: 199px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -216,7 +216,7 @@ nav a:hover {
     justify-content: space-between;
     text-decoration: none;
     color: black;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 .card-info {
     padding: 9px 0 11px 16px; 
@@ -228,8 +228,7 @@ nav a:hover {
 .grid-1, .grid-2 {
     display: grid;
     grid-template-columns: 246px 246px 246px;
-    gap: 30px; 
-    height: 199px; 
+    gap: 30px;   
 }
 .card-image {
     width: 236px;
@@ -249,7 +248,7 @@ nav a:hover {
     background: #F2F2F2;
     width: 25.50%;
     margin: 0;
-    padding: 40px 40px 0 40px;
+    padding: 40px;
 }
 .card-populaire {
     background-color: white;
@@ -262,7 +261,6 @@ nav a:hover {
     display: grid;
      gap: 33px;
     grid-template-rows: 144px 144px 144px;
-    width: 343px;
 }
 .card-image-populaire {
     width: 137px;
@@ -278,6 +276,7 @@ nav a:hover {
 }
 .card-info-populaire-bloc {
     width: 170px;
+    height: 64px;
 }
 .card-info-populaire {
     display: flex;
@@ -317,50 +316,32 @@ nav a:hover {
 }
 
 /* Activite */
-/* .card-activite {
 
+.activites h1 {
+    margin-bottom: 19px;
 }
 .grid-activite {
     display: grid;
     grid-template-columns: 302px 302px 302px 302px;
-    border: 1px solid red;
+    gap: 43px;
 }
 .card-image-activite {
     width: 302px;
     height: 389px;
-    object-fit: cover;
 }
 .card-image-activite img {
-    width: 100%;
-    height: 389px;
-    object-fit: cover;
-} */
-
-.grid-activite {
-    display: grid;
-    grid-template-columns: 302px 302px 302px 302px;
-    grid-template-rows: 445px;
-    gap: 43px;
-
-}
-
-.card-image-activite {
-
-}
-
-.grid-activite img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-
 .grid-activite h2 {
-    padding: 20px 36px 21px 19px;
-    /* background-color: RED; */
+   margin: 20px;
 }
 .card-activite {
-    background: red;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1)
-    /* border-radius: 0 0 20px 20px; */
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius:  20px;
+    display: flex;
+    flex-direction: column;
 }
