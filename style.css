@@ -192,7 +192,6 @@ button:hover {
     margin-top: 40px;
     width: max-content;
 }
-
 .grid-1 {
    margin-bottom: 30px;
 }
@@ -207,11 +206,12 @@ button:hover {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 .card-info {
-    padding: 9px 0 11px 16px; 
+    margin-top: 4px;
+    padding: 0 0 11px 16px; 
 }
-.card-info h3,
+
 .card-info p {
-    margin-top: 3px;
+    margin: 3px 0 3px 0;
 }
 .grid-1, .grid-2 {
     display: grid;
@@ -220,11 +220,11 @@ button:hover {
 }
 .card-image {
     width: 236px;
-    height: 124px;   
+    height: 124px;  
 }
 .card-image img {
     width: 100%;
-    height: 124px;
+    height: 114px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     border: 5px solid #FFFFFF;
@@ -250,13 +250,13 @@ button:hover {
     grid-template-rows: 144px 144px 144px;
 }
 .card-image-populaire {
-    width: 137px;
+    width: 127px;
     height: 134px;
     margin-right: 20px;
 }
 .card-image-populaire img {
     width: 100%;
-    height: 100%;
+    height: 134px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     border: 5px solid #FFFFFF;
@@ -264,7 +264,6 @@ button:hover {
 .card-info-populaire-bloc {
     width: 170px;
     height: 60px;
-    border: 1px solid blue;
 }
 .card-info-populaire {
     display: flex;
@@ -333,7 +332,9 @@ button:hover {
 }
 
 /* FOOTER */
+
 footer {
+    width: 90.64%;
     display: flex;
     padding: 45px 0 0 70px;
     background: #F2F2F2;
@@ -366,7 +367,6 @@ footer nav li {
     main, 
     footer {
         margin-left: 0;
-        border: 1px solid blue;
     }
     header,
     .margin-bottom-left,
@@ -376,6 +376,11 @@ footer nav li {
     footer {
         margin-left: 72px;
     }
+    /* SEARCH */
+    .search {
+        width: 50.43%;
+    }
+    
 
     /* Filters (form-filters) */
     .form-filtre {
@@ -393,23 +398,19 @@ footer nav li {
         display: flex;
         flex-direction: column; 
         margin-right: 0;
+        margin-bottom: 70px;
     }
     
     /* LEFT */
     .left {
         width: 87%;
         margin-right: 0;
-        border: 1px solid red;
         margin-bottom: 53px;
     }
-    .grid-1 {
-        border: 1px solid red;
-    }
+   
     /* RIGHT */
     .right {
       width: 87.50%;
-      
-      border: 1px solid red;
     }
     .grid-populaire {
         display: grid;
@@ -426,7 +427,7 @@ footer nav li {
         margin-right: 15px;
     }
     
-     .card-info-populaire-bloc h3 {
+    .card-info-populaire-bloc h3 {
         font-size: 14px;
     }
     .card-info-populaire-bloc p {
@@ -436,12 +437,39 @@ footer nav li {
         width: 130px;
         height: 69px;
     }
-   
-    .activites, 
-    footer {
-        display: none;
+    /* ACTIVITES */
+    .activites h2 {
+        margin-bottom: 34px;
+    }
+    .grid-activite {
+        grid-template-columns: 182px 182px 182px 182px;
+        gap: 50px;
+        margin-bottom: 69px;
+    }
+    .card-image-activite {
+        width: 182px;
+        height: 211px;
+    }
+    .grid-activite .place {
+        margin: 9px 0 7px 20px;
+    }
+    .grid-activite .place-notre-dame {
+        margin-right: 32px;
+    }
+    .card-activite {
+        height: 267px;
+    }
+    .card-image-activite img {
+        height: 211px;
     }
 
+    /* FOOTER */
+    footer {
+        width: 81.50%;
+    }
+    footer div {
+        margin-right: 82px;
+    }
 }
 
 /* MEDIA QUERY MOBILE */
