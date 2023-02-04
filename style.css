@@ -185,8 +185,6 @@ header nav a:hover {
     border-radius: 20px;
     background: #F2F2F2;
     width: 59.26%;
-    /* width: 59.20%; */
-    
     padding: 40px;
     margin-right: 40px;
 }
@@ -210,7 +208,8 @@ header nav a:hover {
     text-decoration: none;
     color: black;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    width: 96.722%;
+    /* width: 96.722%; */
+    
     height: 189px;
     border: 5px solid white;
 }
@@ -225,13 +224,10 @@ header nav a:hover {
 .grid-1, .grid-2 {
     display: grid;
     grid-template-columns: 30.50% 30.50% 30.50%;
-    margin-right: 0;
-    padding-right: 0;
     gap: 30px;
     /* gap: 3.719%; */
 }
 .card-image {
-   
     width: 100%;
     height: 124px;
 }
@@ -246,7 +242,8 @@ header nav a:hover {
 acide {
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 25.186%;
+    /* width: 25.186%; */
+    width: 25.408%;
     padding: 40px;
 }
 .card-populaire {
@@ -256,16 +253,18 @@ acide {
     flex-direction: row;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     border: 5px solid white;
-    width: 97.945%;
-    height: 95.30%;
+    /* width: 97.945%; */
+    /* height: 95.30%; */
 }
 .grid-populaire {
     display: grid;
     gap: 33px;
-    grid-template-rows: 28.236% 28.236%  28.236% ;
+    /* grid-template-rows: 28.326% 28.236%  28.236%; */
+    grid-template-rows: 28.916% 28.916% 28.916%;
+    
 }
 .card-image-populaire {
-    width: 41.142%;
+    width: 40.93%;
     min-width:32%;
     height: 134px;
     margin-right: 15px;
@@ -359,11 +358,12 @@ acide {
 /* FOOTER */
 
 footer {
-    width: 90.64%;
+    /* width: 90.64%; */
     display: flex;
     padding: 45px 0 0 70px;
     background: #F2F2F2;
-    height: 200px;
+    height: 128px;
+    margin-right: 11px;
 }
 footer div {
     margin-right: 18.126%;
@@ -383,12 +383,9 @@ footer nav li {
 /* MEDIA QUERY TABLETTE */
 @media screen and (min-width:768px) and (max-width : 991px) {
 
-
-
  body
     {
-    width: 100%;
-    border: 1px solid blue;
+    /* width: 100%; */
     }
     .margin-bottom-left p {
         margin-top: 13px;
@@ -405,7 +402,6 @@ footer nav li {
     footer {
         margin-left: 72px;
     }
-    
    
     /* Filters (form-filters) */
     .form-filtre {
@@ -415,14 +411,19 @@ footer nav li {
         margin-right: 17px;
     }
     .form-filtre button {
-        margin-right: 22px;
+        margin-right: 22px; 
     }
+   .div-button-phone {
+    display: flex;
+    flex-wrap: nowrap;
+   }
    
     /* MAIN */
     .container {
         flex-direction: column; 
         margin-right: 0;
         margin-bottom: 70px;
+        
     }
     
     /* LEFT */
@@ -445,10 +446,10 @@ footer nav li {
     .card-populaire {
         height: 93.056%;
         width: 98.231%;
+        
     }
     .card-image-populaire {
-        margin-right: 15px;
-        width: 43.802%;
+        width: 74.20%;
     }
     .card-info-populaire-bloc h3 {
         font-size: 0.875em;
@@ -484,26 +485,22 @@ footer nav li {
   
     /* FOOTER */
     footer {
-        width: 81.50%;
+        /* width: 81.50%; */
     }
     footer div {
-        /* margin-right: 10.153%; */
-        margin-right: 82px;
+        margin-right: 10.153%;
+        /* margin-right: 80px; */
     }
 }
 
 /* MEDIA QUERY MOBILE */
 @media screen and (min-device-width: 375px) and (max-device-width: 767px) {
-    body {
-     width: 100%;
-     border: 1px solid red;
-    }
+
      main,
      footer,
      header,
      .margin-bottom-left
      {
-        width: 100%;
         margin: 0;
      }
      header img {
@@ -618,35 +615,73 @@ footer nav li {
         flex-direction: column-reverse;
      }
     
-  
      .grid-populaire {
-        grid-template-columns: 335px;
-
-        
+        /* grid-template-columns: 335px; */
      }
     
     .left, 
     acide {
-        /* width: 88.80%; */
-        width: 100%;
-        padding: 0;
-        /* padding: 26px 0 47px 0; */
+        width: 89.334%;
+        margin: 0;
+        padding: 28px 21px 47px 20px;
         border-radius: 0;
         /* border: 1px solid red; */
-
     }
-    .left {
-        background: white;
+    .card-image-populaire
+    {
+        width: 49.948%;
     }
-    .left h2 {
-        margin-bottom: 19px;
+    .card {
+        width: 97.015%;
     }
     .grid-1,
     .grid-2 {
-        grid-template-columns: 335px;
+        grid-template-columns: 100%;
         gap: 12px;
+    }
+    .left {
+        background: white;
+        margin-bottom: 105px;
+    }
+    .left h2 {
+        margin-bottom: 19px;
         
+    }
+    .activites {
         
+    }
+    .afficher-plus {
+        display: none;
+    }
+    .activites h2 {
+        width: 200px;
+        margin-bottom: 0;
+    }
+    .grid-activite {
+        grid-template-columns:  100%;
+        gap: 24px;
+    }
+    .activites {
+        padding: 0 21px 90px 20px;
+    }
+   
+    .card-activite {
+        height: 190px;
+    }
+    .card-image-activite {
+        height: 134px;
+    }
+    .place-h3-activite {
+        height: 100%;
+    }
+    footer {
+        flex-direction: column;
+        padding: 45px 0 61px 30px;
+        height: 100%;
+    }
+    footer div {
+        margin: 0;
+        margin-bottom: 40px;
     }
  }
 
