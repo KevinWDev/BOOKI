@@ -159,6 +159,10 @@ header nav a:hover {
 .form-filtre-button button:hover {
     background: #DEEBFF;
 }
+.div-button-phone {
+    display: flex;
+    flex-wrap: nowrap;
+   }
 /* Info logement */
 .info-logement {
     display: flex;
@@ -518,6 +522,7 @@ footer nav li {
      }
      header nav {
          width: 100%;
+         margin-bottom: 31px;
      }
      header nav ul {
          justify-content:center;
