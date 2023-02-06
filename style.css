@@ -5,7 +5,6 @@ body {
 }
 * {
     margin: 0;
-    padding: 0;
 }
 
 /* Balise générique */
@@ -75,23 +74,20 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
-/* Recherche */
+/* Search */
+
 .research {
     background: #0065FC;
     color: white;
     border: 1px solid #0065FC;
     border-radius: 0 15px 15px 0;
-    /* width: 9.815%; */
     width: 132px;
-    height: 52.50px;
     font-size: 1.125em;
     font-weight: 700;   
     font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
 }
 .position-search input[type="text"] {
-    width: 235px;
-    /* width: 17.473%; */
-    height: 51px;
+    width: 231px;
     background-color: white;
     text-align: center;
     font-size: 1.125em;
@@ -114,17 +110,17 @@ header nav a:hover {
 .icons-position-search{
     border: 1px solid #F2F2F2;
     background: #F2F2F2;
-    padding: 16px 18px 19px 18px;
+    padding: 15px 17px 15px 17px;
     border-radius: 15px 0 0 15px;
+    font-size: 18.65px;
 }
 .position-search {
     display: flex;
+    height: 49px;
 }
-
 #research-glass {
     display: none; 
 }
-
 
 /* Filters (form-filters) */
 .form-filtre {
@@ -358,7 +354,6 @@ article {
 /* FOOTER */
 
 footer {
-    /* width: 90.64%; */
     display: flex;
     padding: 45px 0 0 70px;
     background: #F2F2F2;
@@ -366,7 +361,8 @@ footer {
     margin-right: 11px;
 }
 footer div {
-    margin-right: 18.126%;
+    margin-right: 18.125%;
+    /* margin-right: 230px; */
 }
 footer h2 {
     margin-bottom: 20px;
@@ -439,7 +435,6 @@ footer nav li {
         gap: 27px;
     }
     .card-populaire {
-        height: 93.056%;
         width: 98.231%; 
     }
     .card-image-populaire {
@@ -481,7 +476,7 @@ footer nav li {
         /* width: 81.50%; */
     }
     footer div {
-        margin-right: 10.153%;
+        margin-right: 9.547%;
         /* margin-right: 80px; */
     }
 }
@@ -552,14 +547,13 @@ footer nav li {
         display: block;
     }
     .position-search input[type="text"] {
-        width: 232px;
+        width: 227px;
     }
     .research {
         width: 49px;
     }
     .form-filtre {
         margin-left: 20px;
-        /* border: 1px solid blue; */
         flex-direction: column;   
     }
     .form-filtre h2 {
@@ -606,8 +600,13 @@ footer nav li {
         flex-direction: column-reverse;
         margin-bottom: 105px;
     }
+    .card-populaire {
+        height: 134px;
+    }
     .grid-populaire {
         /* grid-template-columns: 335px; */
+        grid-template-rows: none;
+        gap: 11px;
     }
     .left, 
     article {
@@ -615,7 +614,6 @@ footer nav li {
         margin: 0;
         padding: 28px 21px 47px 20px;
         border-radius: 0;
-        /* border: 1px solid red; */
     }
     .card-image-populaire
     {
