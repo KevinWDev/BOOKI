@@ -10,7 +10,7 @@ body {
 /* Balise générique */
 main,
 footer {
-    margin-left: 50px; 
+    margin-left: 25px; 
 }
 h1, h2 {
     font-size: 1.375em;
@@ -30,7 +30,7 @@ a {
 }
 header, 
 .margin-bottom-left {
-    margin-left: 55px;
+    margin-left: 27.50px;
 }
 .card-info h3,
 .card-info-populaire-bloc h3,
@@ -54,6 +54,7 @@ header {
 header nav ul {
     display: flex;
     list-style-type: none;
+    padding: 0;
 }
 header nav a {
     padding-top: 42px;
@@ -69,7 +70,7 @@ header nav a:hover {
 .margin-bottom-left {
     margin-bottom: 32px;
 }
-.margin-bottom-left p{
+.margin-bottom-left p {
     margin-top: 8px;
     margin-bottom: 20px;
 }
@@ -125,7 +126,7 @@ header nav a:hover {
 /* Filters (form-filters) */
 .form-filtre {
     display: flex;
-    margin-left: 62px;
+    margin-left: 31px;
     margin-bottom: 35px;
 }
 .form-filtre h2, 
@@ -155,14 +156,12 @@ header nav a:hover {
 .form-filtre-button button:hover {
     background: #DEEBFF;
 }
-.div-button-phone {
-    display: flex;
-    flex-wrap: nowrap;
-   }
+
+
 /* Info logement */
 .info-logement {
     display: flex;
-    margin-left: 59px;
+    margin-left: 29.5px;
     margin-bottom: 39px;
 }
 .icons-info {
@@ -184,7 +183,7 @@ header nav a:hover {
 .left {
     border-radius: 20px;
     background: #F2F2F2;
-    width: 59.26%;
+    width: 58.182%;
     padding: 40px;
     margin-right: 40px;
 }
@@ -242,7 +241,7 @@ article {
     border-radius: 20px;
     background-color: #F2F2F2;
     /* width: 25.186%; */
-    width: 25.408%;
+    width: 24.946%;
     padding: 40px;
 }
 .card-populaire {
@@ -321,10 +320,9 @@ article {
 }
 .grid-activite {
     display: grid;
-    grid-template-columns: 22.371% 22.371% 22.371% 22.371%;
+    grid-template-columns: 21.964% 21.964% 21.964% 21.964%;
     /* gap: 43px; */
-    gap: 3.186%;
-    /* gap: 3.25%; */
+    gap: 3.119%;
 }
 .card-image-activite {
     width: 100%;
@@ -358,7 +356,9 @@ footer {
     padding: 45px 0 0 70px;
     background: #F2F2F2;
     height: 128px;
-    margin-right: 11px;
+    /* width: 90.643%; */
+    margin-right: 36px;
+    
 }
 footer div {
     margin-right: 18.125%;
@@ -392,7 +392,7 @@ footer nav li {
     main,
     .info-logement,
     footer {
-        margin-left: 72px;
+        margin-left: 36px;
     }
    
     /* Filters (form-filters) */
@@ -405,10 +405,6 @@ footer nav li {
     .form-filtre button {
         margin-right: 22px; 
     }
-   .div-button-phone {
-    display: flex;
-    flex-wrap: nowrap;
-   }
    
     /* MAIN */
     .container {
@@ -419,14 +415,14 @@ footer nav li {
     
     /* LEFT */
     .left {
-        width: 87.052%;
+        width: 83.77%;
         margin-right: 0;
         margin-bottom: 53px;
     }
 
     /* RIGHT */
     article {
-      width: 87.052%;
+      width: 83.77%;
     }
     .grid-populaire {
         display: grid;
@@ -453,7 +449,7 @@ footer nav li {
         margin-bottom: 34px;
     }
     .grid-activite {
-        grid-template-columns: 19.805% 19.805% 19.805% 19.805%;
+        grid-template-columns: 19.058% 19.058% 19.058% 19.058%;
         gap: 5.45%;
         /* gap: 50px; */
         margin-bottom: 69px;
@@ -474,9 +470,11 @@ footer nav li {
     /* FOOTER */
     footer {
         /* width: 81.50%; */
+        /* width: 81.736%; */
+        width: 81.736%;
     }
     footer div {
-        margin-right: 9.547%;
+        margin-right: 10%;
         /* margin-right: 80px; */
     }
 }
@@ -513,6 +511,7 @@ footer nav li {
     header nav a {
         width: 100%;
         padding-top: 0; 
+        margin: 0;
         display: inline-block;
         padding-bottom: 23px;
     }
@@ -526,7 +525,6 @@ footer nav li {
         margin-right: 0;
         text-align: center;
     }
-
     .margin-bottom-left {
         margin-left: 20px;
         margin-bottom: 34px;
@@ -552,44 +550,43 @@ footer nav li {
     .research {
         width: 49px;
     }
+    
+    /* filters */
     .form-filtre {
         margin-left: 20px;
         flex-direction: column;   
+        margin-bottom: 43px;
     }
     .form-filtre h2 {
         align-self: flex-start;
         margin-bottom: 15px;
     }
     .form-filtre-button {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .form-filtre button {
-        margin: 0;
-    }
-    .div-button-phone {
-        display: flex;
-        margin-bottom: 17px;
-        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        width: 355px;
     }
     .form-filtre-button button {
         width: 160px;
-        font-size: 0.688em;
+        font-size: 0.688em; 
+        margin: 0;
     }
-    .div-button-phone i {
+    .form-filtre-button button i {
         font-size: 18px;
         margin-right: 5px;
     }
     #button-animaux { 
         white-space: nowrap;
     }
-    .div-button-phone button {
+    .form-filtre-button button {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         margin-right: 14px;
+    }
+    #button-economique,
+    #button-familial {
+        margin-bottom: 17px;
     }
 
      /* INFO LOGEMENT */
@@ -610,7 +607,7 @@ footer nav li {
     }
     .left, 
     article {
-        width: 89.334%;
+        width: 89.067%;
         margin: 0;
         padding: 28px 21px 47px 20px;
         border-radius: 0;
@@ -663,9 +660,11 @@ footer nav li {
         flex-direction: column;
         padding: 45px 0 61px 30px;
         height: 100%;
+        /* width: 100%; */
     }
     footer div {
         margin: 0;
         margin-bottom: 40px;
     }
+    
  }
