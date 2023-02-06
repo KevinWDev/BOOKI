@@ -2,6 +2,7 @@ body {
     max-width: 1400px;
     margin: auto;
     font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
+    
 }
 * {
     margin: 0;
@@ -215,13 +216,12 @@ header nav a:hover {
     margin-top: 4px;
     padding: 0 0 11px 16px; 
 }
-
 .card-info p {
     margin: 3px 0 3px 0;
 }
 .grid-1, .grid-2 {
     display: grid;
-    grid-template-columns: 30.50% 30.50% 30.50%;
+    grid-template-columns: 30.75% 30.75% 30.75%;
     gap: 30px;
     /* gap: 3.719%; */
 }
@@ -392,7 +392,7 @@ footer nav li {
     main,
     .info-logement,
     footer {
-        margin-left: 36px;
+        margin-left: 72px;
     }
    
     /* Filters (form-filters) */
@@ -415,14 +415,14 @@ footer nav li {
     
     /* LEFT */
     .left {
-        width: 83.77%;
+        width: 87.052%;
         margin-right: 0;
         margin-bottom: 53px;
     }
 
     /* RIGHT */
     article {
-      width: 83.77%;
+      width: 87.052%;
     }
     .grid-populaire {
         display: grid;
@@ -449,7 +449,7 @@ footer nav li {
         margin-bottom: 34px;
     }
     .grid-activite {
-        grid-template-columns: 19.058% 19.058% 19.058% 19.058%;
+        grid-template-columns: 19.805% 19.805% 19.805% 19.805%;
         gap: 5.45%;
         /* gap: 50px; */
         margin-bottom: 69px;
@@ -614,10 +614,7 @@ footer nav li {
     }
     .card-image-populaire
     {
-        width: 49.948%;
-    }
-    .card {
-        width: 97.015%;
+        width: 44.151%;
     }
     .grid-1,
     .grid-2 {
@@ -648,7 +645,7 @@ footer nav li {
         padding: 0 21px 90px 20px;
     }
     .card-activite {
-        height: 199px;
+        height: 190px;
     }
     .card-image-activite {
         height: 134px;
