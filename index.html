@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOOKI</title>
     <link rel="stylesheet" href="style.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,8 +23,8 @@
 
         <nav>
             <ul>
-                <li><a href="#Hebergement">Hébergements</a></li>
-                <li><a href="#Activités">Activités</a></li>
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
 
@@ -42,38 +40,29 @@
                 <input type="text" placeholder="Marseille, France" />
 
 
-                <button class="research"><i class="fa-solid fa-magnifying-glass" id="research-glass"></i><span
+                <button type="button" class="research"><i class="fa-solid fa-magnifying-glass" id="research-glass"></i><span
                         class="research-phone">Recherche</span></button>
-                <!-- <input type="submit" value="Recherche" /> -->
-
-
-
             </div>
-
-
         </form>
     </div>
 
     <form class="form-filtre">
-
         <h2>Filtres</h2>
 
         <div class="form-filtre-button">
             <div class="div-button-phone">
-                <button id="button-economique"><i
+                <button type="button" id="button-economique"><i
                         class="fa-solid fa-money-bill-wave position-icons-filtre"></i>Économique</button>
-                <button id="button-familial"><i
+                <button type="button" id="button-familial"><i
                         class="fa-solid fa-person position-icons-filtre-familial"></i>Familial</button>
             </div>
             <div class="div-button-phone">
-                <button id="button-romantique"><i
+                <button type="button" id="button-romantique"><i
                         class="fa-solid fa-heart position-icons-filtre"></i>Romantique</button>
-                <button id="button-animaux"><i class="fa-solid fa-dog position-icons-filtre-animaux"></i>Animaux
+                <button type="button" id="button-animaux"><i class="fa-solid fa-dog position-icons-filtre-animaux"></i>Animaux
                     autorisés</button>
             </div>
         </div>
-
-
     </form>
 
     <div class="info-logement">
@@ -82,11 +71,10 @@
     </div>
 
     <main>
-
         <section class="container">
             <div class="left">
 
-                <h2 id="Hébergement">Hébergements à Marseille</h2>
+                <h2 id="hebergement">Hébergements à Marseille</h2>
 
                 <div class="grid-1">
 
@@ -197,7 +185,7 @@
                 </a>
             </div>
 
-            <acide>
+            <article>
                 <div class="acide-phone">
                     <div class="icon-populaire">
                         <h2>Les plus populaires</h2>
@@ -268,11 +256,11 @@
                         </a>
                     </div>
                 </div>
-            </acide>
+            </article>
             
-
         </section>
-        <section id="Activités" class="activites">
+
+        <section id="activites" class="activites">
 
             <h2>Activités à Marseille</h2>
 
@@ -319,9 +307,6 @@
             </div>
 
         </section>
-
-
-
     </main>
 
     <footer>
@@ -348,7 +333,6 @@
             </nav>
 
         </div>
-
 
         <div class="footer-assistance">
             <h2>Assistance</h2>

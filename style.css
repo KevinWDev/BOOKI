@@ -21,7 +21,7 @@ footer h2,
 .afficher-plus {
     font-size: 1.1em;
 }
- a {
+a {
     color: black;
     text-decoration: none;
  }
@@ -88,7 +88,7 @@ header nav a:hover {
     font-weight: 700;   
     font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
 }
- .position-search input[type="text"] {
+.position-search input[type="text"] {
     width: 235px;
     /* width: 17.473%; */
     height: 51px;
@@ -100,12 +100,12 @@ header nav a:hover {
     border-left: none;
     outline: none;
  }
- ::placeholder {
+::placeholder {
     color: black;
     opacity: 1;
     font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
  }
- *:focus::-webkit-input-placeholder {
+*:focus::-webkit-input-placeholder {
     opacity: 0;
 }
 *:focus::-moz-placeholder {
@@ -213,7 +213,6 @@ header nav a:hover {
     color: black;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     /* width: 96.722%; */
-    
     height: 189px;
     border: 5px solid white;
 }
@@ -243,7 +242,7 @@ header nav a:hover {
 }
 
 /* RIGHT */
-acide {
+article {
     border-radius: 20px;
     background-color: #F2F2F2;
     /* width: 25.186%; */
@@ -264,8 +263,7 @@ acide {
     display: grid;
     gap: 33px;
     /* grid-template-rows: 28.326% 28.236%  28.236%; */
-    grid-template-rows: 28.916% 28.916% 28.916%;
-    
+    grid-template-rows: 28.916% 28.916% 28.916%; 
 }
 .card-image-populaire {
     width: 40.93%;
@@ -273,7 +271,6 @@ acide {
     height: 134px;
     margin-right: 15px;
 }
-
 .card-image-populaire img {
     width: 100%;
     height: 100%;
@@ -292,7 +289,6 @@ acide {
     justify-content: space-around;
     width: 205px;
 }
-
 .icon-populaire {
     display: flex;
     justify-content: space-between;
@@ -384,13 +380,9 @@ footer nav li {
     margin-bottom: 12px;
 }
 
-/* MEDIA QUERY TABLETTE */
+/* ----------MEDIA QUERY TABLETTE---------- */
 @media screen and (min-width:768px) and (max-width : 991px) {
 
- body
-    {
-    /* width: 100%; */
-    }
     .margin-bottom-left p {
         margin-top: 13px;
     }
@@ -427,7 +419,6 @@ footer nav li {
         flex-direction: column; 
         margin-right: 0;
         margin-bottom: 70px;
-        
     }
     
     /* LEFT */
@@ -438,7 +429,7 @@ footer nav li {
     }
 
     /* RIGHT */
-    acide {
+    article {
       width: 87.052%;
     }
     .grid-populaire {
@@ -449,8 +440,7 @@ footer nav li {
     }
     .card-populaire {
         height: 93.056%;
-        width: 98.231%;
-        
+        width: 98.231%; 
     }
     .card-image-populaire {
         width: 74.20%;
@@ -463,7 +453,6 @@ footer nav li {
         font-size: 0.813em;
     }
     
-
     /* ACTIVITES */
     .activites h2 {
         margin-bottom: 34px;
@@ -497,135 +486,131 @@ footer nav li {
     }
 }
 
-/* MEDIA QUERY MOBILE */
-@media screen and (min-device-width: 375px) and (max-device-width: 767px) {
+/* ----------MEDIA QUERY MOBILE---------- */
+@media screen and (min-width: 375px) and (max-width: 767px) {
 
-     main,
-     footer,
-     header,
-     .margin-bottom-left
-     {
+    main,
+    footer,
+    header,
+    .margin-bottom-left
+    {
         margin: 0;
-     }
-     header img {
-         /* margin: auto; */
-         margin-top: 21px;
-         margin-bottom: 35px;
-         /* margin-bottom: 35px; */
-         
-     }
-     header {
+    }
+    header img {
+        /* margin: auto; */
+        margin-top: 21px;
+        margin-bottom: 35px;
+        /* margin-bottom: 35px; */
+    }
+    header {
         /* flex-direction: column; */
-         /* align-items: center; */
-         flex-direction: column;
-         align-items: center; 
+        /* align-items: center; */
+        flex-direction: column;
+        align-items: center; 
      }
-     header nav {
-         width: 100%;
-         margin-bottom: 31px;
+    header nav {
+        width: 100%;
+        margin-bottom: 31px;
+    }
+    header nav ul {
+        justify-content:center;
+    }
+    header nav a {
+        width: 100%;
+        padding-top: 0; 
+        display: inline-block;
+        padding-bottom: 23px;
+    }
+    header nav a:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
      }
-     header nav ul {
-         justify-content:center;
-     }
-     header nav a {
-         width: 100%;
-         padding-top: 0; 
-         display: inline-block;
-         padding-bottom: 23px;
-     }
-     header nav a:hover {
-         color: #0065FC;
-         
-         border-bottom: 3px solid #0065FC;
-         border-top: none;
-     }
-     header nav li {
-         width: 100%;
-         margin-right: 0;
-         text-align: center;
-     }
+    header nav li {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
 
-     .margin-bottom-left {
+    .margin-bottom-left {
         margin-left: 20px;
         margin-bottom: 34px;
-     }
-     .margin-bottom-left h1 {
+    }
+    .margin-bottom-left h1 {
         width: 80%;
-     }
-     .margin-bottom-left p {
+    }
+    .margin-bottom-left p {
         margin-top: 13px;
         margin-bottom: 36px;
-     }
+    }
 
-     /* Search */
-     .research-phone {
+    /* Search */
+    .research-phone {
         display: none;
-     }
-     #research-glass {
+    }
+    #research-glass {
         display: block;
-     }
-     .position-search input[type="text"] {
+    }
+    .position-search input[type="text"] {
         width: 232px;
-     }
-     .research {
+    }
+    .research {
         width: 49px;
-     }
-     .form-filtre {
+    }
+    .form-filtre {
         margin-left: 20px;
         /* border: 1px solid blue; */
         flex-direction: column;   
-     }
-     .form-filtre h2 {
+    }
+    .form-filtre h2 {
         align-self: flex-start;
         margin-bottom: 15px;
-     }
-     .form-filtre-button {
+    }
+    .form-filtre-button {
         display: flex;
         flex-direction: column;
         width: 100%;
-     }
-     .form-filtre button {
+    }
+    .form-filtre button {
         margin: 0;
-     }
-     .div-button-phone {
+    }
+    .div-button-phone {
         display: flex;
         margin-bottom: 17px;
         /* justify-content: space-around; */
-     }
-     .form-filtre-button button {
+    }
+    .form-filtre-button button {
         width: 160px;
         font-size: 0.688em;
-     }
-     .div-button-phone i {
+    }
+    .div-button-phone i {
         font-size: 18px;
         margin-right: 5px;
-     }
-     #button-animaux { 
+    }
+    #button-animaux { 
         white-space: nowrap;
     }
-     .div-button-phone button {
+    .div-button-phone button {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         margin-right: 14px;
-     }
+    }
 
      /* INFO LOGEMENT */
-     .info-logement {
+    .info-logement {
         margin-left: 20px;
-     }
-  
-     .container {
+    }
+    .container {
         flex-direction: column-reverse;
-     }
-    
-     .grid-populaire {
+        margin-bottom: 105px;
+    }
+    .grid-populaire {
         /* grid-template-columns: 335px; */
-     }
-    
+    }
     .left, 
-    acide {
+    article {
         width: 89.334%;
         margin: 0;
         padding: 28px 21px 47px 20px;
@@ -644,16 +629,14 @@ footer nav li {
         grid-template-columns: 100%;
         gap: 12px;
     }
+    .grid-1 {
+        margin-bottom: 12px;
+    }
     .left {
         background: white;
-        margin-bottom: 105px;
     }
     .left h2 {
         margin-bottom: 19px;
-        
-    }
-    .activites {
-        
     }
     .afficher-plus {
         display: none;
@@ -669,9 +652,8 @@ footer nav li {
     .activites {
         padding: 0 21px 90px 20px;
     }
-   
     .card-activite {
-        height: 190px;
+        height: 199px;
     }
     .card-image-activite {
         height: 134px;
@@ -689,6 +671,3 @@ footer nav li {
         margin-bottom: 40px;
     }
  }
-
- /* REVOIR LES SECTIONS ET REMPLACER PAR UNE SECTION ET DES DIV POUR LES CARDS ENSITE
-  POUR LES PLUS POULAIRES METTRE UN ACIDE A LA PLACE */
