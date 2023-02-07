@@ -2,17 +2,22 @@ body {
     max-width: 1400px;
     margin: auto;
     font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
-    
 }
 * {
     margin: 0;
 }
 
 /* Balise générique */
-main,
-footer {
-    margin-left: 25px; 
+main
+{
+    width: 100%;
 }
+.container-activites, 
+footer {
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
 h1, h2 {
     font-size: 1.375em;
 }
@@ -31,7 +36,7 @@ a {
 }
 header, 
 .margin-bottom-left {
-    margin-left: 27.50px;
+    padding-left: 27.50px;
 }
 .card-info h3,
 .card-info-populaire-bloc h3,
@@ -127,7 +132,7 @@ header nav a:hover {
 /* Filters (form-filters) */
 .form-filtre {
     display: flex;
-    margin-left: 31px;
+    padding-left: 31px;
     margin-bottom: 35px;
 }
 .form-filtre h2, 
@@ -138,9 +143,11 @@ header nav a:hover {
     align-self: center;
 }
 .form-filtre-button button {
-    padding: 4px 20px;
+    padding: 4px 15px;
     font-weight: 700;
-    font-size: 1.063em;
+    /* padding: 4px 20px; */
+    /* font-size: 1.063em; */
+    font-size: 0.844em;
     font-family: 'Raleway', Arial, 'Trebuchet MS', sans-serif;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
@@ -152,7 +159,8 @@ header nav a:hover {
 }
 .form-filtre-button i {
     color: #0065FC;
-    margin-right: 10px;
+    padding-right: 7px;
+    /* margin-right: 10px; */
 }
 .form-filtre-button button:hover {
     background: #DEEBFF;
@@ -161,7 +169,7 @@ header nav a:hover {
 /* Info logement */
 .info-logement {
     display: flex;
-    margin-left: 29.5px;
+    padding-left: 29.5px;
     margin-bottom: 39px;
 }
 .icons-info {
@@ -176,16 +184,21 @@ header nav a:hover {
 /* MAIN */
 .container {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 60px;
+    /* padding-left: 25px; */
+    /* padding: 40px; */
+    width: 100%;
 }
 
 /* LEFT */
+
 .left {
     border-radius: 20px;
     background: #F2F2F2;
-    width: 58.182%;
+    width: 57.143%;
     padding: 40px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
 }
 
 .left h2 {
@@ -207,7 +220,7 @@ header nav a:hover {
     text-decoration: none;
     color: black;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    height: 189px;
+    min-height: 189px;
     border: 5px solid white;
 }
 .card-info {
@@ -225,7 +238,7 @@ header nav a:hover {
 }
 .card-image {
     width: 100%;
-    height: 124px;
+    height: 114px;
 }
 .card-image img {
     width: 100%;
@@ -238,7 +251,7 @@ header nav a:hover {
 article {
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 24.946%;
+    width: 24.50%;
     padding: 40px;
 }
 .card-populaire {
@@ -248,11 +261,12 @@ article {
     flex-direction: row;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     border: 5px solid white;
+    min-height: 134px;
 }
 .grid-populaire {
     display: grid;
     gap: 33px;
-    grid-template-rows: 28.916% 28.916% 28.916%; 
+    /* grid-template-rows: 28.916% 28.916% 28.916%;  */
 }
 .card-image-populaire {
     width: 40.93%;
@@ -306,15 +320,18 @@ article {
 /* Activite */
 .activites {
     margin-bottom: 60px;
+    width: 100%;
 }
+
 .activites h2 {
     margin-bottom: 19px;
 }
 .grid-activite {
     display: grid;
-    grid-template-columns: 21.964% 21.964% 21.964% 21.964%;
-    /* gap: 43px; */
-    gap: 3.119%;
+    /* grid-template-columns: 21.964% 21.964% 21.964% 21.964%; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 43px;
+    
 }
 .card-image-activite {
     width: 100%;
@@ -343,26 +360,33 @@ article {
 
 /* FOOTER */
 
-footer {
+.container-footer {
+    
     display: flex;
-    padding: 45px 0 0 70px;
     background: #F2F2F2;
-    height: 128px;
-    margin-right: 36px;
+    
+    padding: 45px 0 0 70px;
+    /* width: 93.019%; */
+    
+    /* margin-left: 25px; */
 }
-footer div {
-    margin-right: 18.125%;
-    /* margin-right: 230px; */
+
+.footer-propos,
+.footer-hebergements
+{
+    /* margin-right: 18.125%; */
+    padding-right: 230px;
+    
 }
-footer h2 {
+.container-footer h2 {
     margin-bottom: 20px;
 }
-footer nav ul {
+.container-footer nav ul {
     padding: 0;
     list-style-type: none;
     width: max-content;
 }
-footer nav li {
+.container-footer nav li {
     margin-bottom: 12px;
 }
 
@@ -372,19 +396,24 @@ footer nav li {
     .margin-bottom-left p {
         margin-top: 13px;
     }
-    main, 
-    footer {
-        margin-left: 0;
+    body {
+        
     }
+    /* Mettre une balise pour mettre padding 55 */
+
+    
     header,
     .margin-bottom-left,
     .form-filtre,
-    main,
     .info-logement,
-    footer {
-        margin-left: 72px;
+    .container-activites,
+    footer
+    {
+        padding-left: 55px;
+        padding-right: 55px;
+        
     }
-   
+    
     /* Filters (form-filters) */
     .form-filtre {
         margin-bottom: 38px;
@@ -399,20 +428,21 @@ footer nav li {
     /* MAIN */
     .container {
         flex-direction: column; 
-        margin-right: 0;
+        align-items: center;
         margin-bottom: 70px;
+        padding-left: 0;
     }
-    
+   
     /* LEFT */
     .left {
-        width: 87.052%;
-        margin-right: 0;
+        width: 80.727%;
         margin-bottom: 53px;
+        margin-right: 0;
     }
 
     /* RIGHT */
     article {
-      width: 87.052%;
+        width: 80.727%;
     }
     .grid-populaire {
         display: grid;
@@ -439,9 +469,7 @@ footer nav li {
         margin-bottom: 34px;
     }
     .grid-activite {
-        grid-template-columns: 19.805% 19.805% 19.805% 19.805%;
-        gap: 5.45%;
-        /* gap: 50px; */
+        /* grid-template-columns: 19.805% 19.805% 19.805% 19.805%; */
         margin-bottom: 69px;
     }
     .card-image-activite {
@@ -456,34 +484,42 @@ footer nav li {
         height: 20.974%;
         margin-left: 19px;
     }
+   
+    
   
     /* FOOTER */
-    footer {
+    /* footer {
         width: 81.736%;
+    } */
+    .container-footer {
+        /* width: 81.635%; */
+        /* margin-left: 70px; */
     }
-    footer div {
-        margin-right: 10%;
-        /* margin-right: 80px; */
+    .footer-propos,
+    .footer-hebergements {
+        /* margin-right: 10%; */
+        padding-right: 80px;
     }
 }
 
 /* ----------MEDIA QUERY MOBILE---------- */
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
-    main,
+    /* main,
     footer,
     header,
     .margin-bottom-left
     {
-        margin: 0;
-    }
+        margin: auto;
+    } */
     header img {
         margin-top: 21px;
         margin-bottom: 35px;
     }
     header {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
+        padding: 0; 
      }
     header nav {
         width: 100%;
@@ -504,13 +540,16 @@ footer nav li {
         border-bottom: 3px solid #0065FC;
         border-top: none;
      }
+     header nav a{
+        border-bottom: 3px solid #F2F2F2;
+     }
     header nav li {
         width: 100%;
         margin-right: 0;
         text-align: center;
     }
     .margin-bottom-left {
-        margin-left: 20px;
+        padding-left: 20px;
         margin-bottom: 34px;
     }
     .margin-bottom-left h1 {
@@ -537,7 +576,7 @@ footer nav li {
     
     /* filters */
     .form-filtre {
-        margin-left: 20px;
+        padding-left: 20px;
         flex-direction: column;   
         margin-bottom: 43px;
     }
@@ -575,10 +614,11 @@ footer nav li {
 
      /* INFO LOGEMENT */
     .info-logement {
-        margin-left: 20px;
+        padding-left: 20px;
     }
     .container {
         flex-direction: column-reverse;
+        padding: 0;
         margin-bottom: 105px;
     }
     .card-populaire {
@@ -588,10 +628,10 @@ footer nav li {
         grid-template-rows: none;
         gap: 11px;
     }
+    
     .left, 
     article {
-        width: 89.067%;
-        margin: 0;
+        width: auto;
         padding: 28px 21px 47px 20px;
         border-radius: 0;
     }
@@ -616,6 +656,9 @@ footer nav li {
     .afficher-plus {
         display: none;
     }
+    .container-activites {
+        padding: 0 20px;
+    }
     .activites h2 {
         width: 200px;
         margin-bottom: 0;
@@ -624,9 +667,7 @@ footer nav li {
         grid-template-columns:  100%;
         gap: 24px;
     }
-    .activites {
-        padding: 0 21px 90px 20px;
-    }
+    
     .card-activite {
         height: 190px;
     }
@@ -637,12 +678,15 @@ footer nav li {
         height: 100%;
     }
     footer {
+        padding: 0;
+    }
+    footer .container-footer {
         flex-direction: column;
         padding: 45px 0 61px 30px;
         height: 100%;
     }
-    footer div {
-        margin: 0;
+    .container-footer div {
+        
         margin-bottom: 40px;
     }
  }
