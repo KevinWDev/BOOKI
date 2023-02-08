@@ -602,9 +602,10 @@ article {
     .card-populaire,
     .card,
     .card-activite {
-        min-width: 333px;
+        min-width: 324px;
         max-width: 100%;
     }
+   
     /* ----------HERBERGEMENT---------- */
     .left, 
     article {
@@ -614,7 +615,7 @@ article {
     }
     .grid-1,
     .grid-2 {
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         gap: 12px;
     }
     .grid-1 {
