@@ -591,18 +591,13 @@ article {
     .info-logement {
         padding-left: 20px;
     }
+    /* ----------MAIN---------- */
     .container {
         flex-direction: column-reverse;
         padding: 0;
         margin-bottom: 105px;
     }
-    .card-populaire {
-        height: 134px;
-    }
-    .grid-populaire {
-        grid-template-rows: none;
-        gap: 11px;
-    }
+
     /* ----------BALISES GENERAL---------- */
     .card-populaire,
     .card,
@@ -638,6 +633,13 @@ article {
     .card-image-populaire
     {
         width: 44.151%;
+    }
+    .card-populaire {
+        height: 134px;
+    }
+    .grid-populaire {
+        grid-template-rows: none;
+        gap: 11px;
     }
     /* ----------ACTIVITES---------- */
    
