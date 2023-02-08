@@ -677,7 +677,6 @@ article {
     }
     .footer-propos,
     .footer-hebergements {
-        padding-right: 0;
         padding-right: 80px;
-    }
+    } 
  }
