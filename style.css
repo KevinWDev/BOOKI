@@ -154,11 +154,12 @@ header nav a:hover {
     border: 2px solid #D9D9D9;
     background: white;
     height: 48px;
+    margin-right: 43px;
 }
 .form-filtre-button {
     display: flex; 
-    min-width: 62%;
-    justify-content: space-between;
+    width: 100%;
+    
 }
 .form-filtre-button i {
     color: #0065FC;
@@ -394,7 +395,7 @@ article {
     
     /* ----------FILTERS (form-filters)---------- */
     .form-filtre {
-        margin-bottom: 38px;
+        margin-bottom: 33px;
     }
     .form-filtre h2 {
         padding-right: 17px;
@@ -403,11 +404,15 @@ article {
         padding-right: 22px; 
     } */
     .form-filtre-button {
-        min-width: 90%;
+        flex-wrap: wrap;
+        
     }
     .form-filtre-button button {
         font-size: 0.844em;
         padding: 4px 15px;
+        width: 180px;
+        margin-right: 20px;
+        margin-bottom: 5px;
     }
    
     /* ----------MAIN---------- */
@@ -476,7 +481,6 @@ article {
     }
    
     /* ----------FOOTER---------- */
-
     .footer-propos,
     .footer-hebergements {
         padding-right: 80px;
@@ -484,8 +488,10 @@ article {
 }
 
 /* ----------MEDIA QUERY MOBILE---------- */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-
+@media screen and (max-width: 767px) {
+    * {
+        min-width: 0;
+    }
     header img {
         margin-top: 21px;
         margin-bottom: 35px;
@@ -527,7 +533,8 @@ article {
         margin-bottom: 34px;
     }
     .margin-bottom-left h1 {
-        width: 298px;
+        max-width: 298px;
+        
     }
     .margin-bottom-left p {
         margin-top: 13px;
@@ -542,11 +549,12 @@ article {
         display: block;
     }
     .position-search input[type="text"] {
-        width: 227px;
+        max-width: 227px;
     }
     .research {
-        width: 49px;
+        max-width: 49px;
     }
+   
     
     /* ----------FILTERS---------- */
     .form-filtre {
@@ -560,13 +568,11 @@ article {
     }
     .form-filtre-button {
         flex-wrap: wrap;
-        max-width: 767px;
         min-width: 0;
     }
     .form-filtre-button button {
-        width: 160px;
+        width: 163px;
         font-size: 0.688em; 
-        margin: 0;
     }
     .form-filtre-button button i {
         font-size: 18px;
@@ -583,7 +589,8 @@ article {
         margin-right: 14px;
     }
     #button-economique,
-    #button-familial {
+    #button-familial,
+    #button-romantique {
         margin-bottom: 17px;
     }
 
@@ -602,7 +609,6 @@ article {
     .card-populaire,
     .card,
     .card-activite {
-        min-width: 333px;
         max-width: 100%;
     }
     /* ----------HERBERGEMENT---------- */
