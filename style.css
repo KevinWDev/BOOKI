@@ -578,6 +578,7 @@ article {
     .form-filtre-button button {
         width: 160px;
         font-size: 0.688em; 
+        /* font-size: O.750em; */
         margin: 0;
     }
     .form-filtre-button button i {
