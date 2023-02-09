@@ -180,9 +180,10 @@ header nav a:hover {
     background: #0065FC;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
-    margin-right: 11px;
 }
-
+.div-icon-info {
+    padding-right: 11px;
+}
 
 /* ----------MAIN---------- */
 .container {
