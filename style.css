@@ -35,7 +35,7 @@ a {
     font-size: 0.875em;
 }
 header, 
-.margin-bottom-left {
+.container-research {
     padding-left: 27.50px;
 }
 .card-info h3,
@@ -73,10 +73,10 @@ header nav a:hover {
     border-top: 2px solid #0065FC;
     font-weight: 500;
 }
-.margin-bottom-left {
+.container-research {
     margin-bottom: 32px;
 }
-.margin-bottom-left p {
+.container-research p {
     margin-top: 8px;
     margin-bottom: 20px;
 }
@@ -378,7 +378,7 @@ article {
 @media screen and (min-width:768px) and (max-width : 991px) {
 
     header,
-    .margin-bottom-left,
+    .container-research,
     .form-filtre,
     .info-logement,
     .container-activites,
@@ -386,7 +386,7 @@ article {
     {
        padding: 0 55px;
     }
-    .margin-bottom-left p {
+    .container-research p {
         margin-top: 13px;
     }
     
@@ -513,14 +513,14 @@ article {
     header nav li {
         width: 100%;
     }
-    .margin-bottom-left {
+    .container-research {
         padding: 0 22px 0 20px;
         margin-bottom: 34px;
     }
-    .margin-bottom-left h1 {
+    .container-research h1 {
         max-width: 298px; 
     }
-    .margin-bottom-left p {
+    .container-research p {
         margin-top: 13px;
         margin-bottom: 36px;
     }
