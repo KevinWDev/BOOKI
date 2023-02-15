@@ -135,8 +135,8 @@ header nav a:hover {
     padding-left: 31px;
     margin-bottom: 35px;
 }
-.form-filtre h2, 
-.form-filtre button {
+.form-filtre h2 
+{
     padding-right: 32px;
 }
 .form-filtre h2 {
@@ -170,7 +170,7 @@ header nav a:hover {
     display: flex;
     padding-left: 29.5px;
     margin-bottom: 39px;
-    padding-right: 22px;
+    padding-right: 22px; 
 }
 .icons-info {
     color: white;
