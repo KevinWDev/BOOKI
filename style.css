@@ -554,10 +554,10 @@ article {
         align-self: flex-start;
         margin-bottom: 15px;
     }
-    /* .form-filtre-button {
+    .form-filtre-button {
         flex-wrap: wrap;
         min-width: 0;
-    } */
+    }
     .form-filtre-button button {
         width: 163px;
         font-size: 0.688em; 
@@ -601,7 +601,6 @@ article {
     .card-activite {
         max-width: 100%;
     }
-   
     /* ----------HERBERGEMENT---------- */
     .left, 
     article {
@@ -611,7 +610,7 @@ article {
     }
     .grid-1,
     .grid-2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         gap: 12px;
     }
     .grid-1 {
