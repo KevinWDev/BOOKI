@@ -264,7 +264,7 @@ article {
 }
 .card-image-populaire {
     width: 46.594%;
-    min-width:32%;
+    min-width: 32%;
     height: 134px;
     padding-right: 15px;
 }
@@ -302,7 +302,7 @@ article {
     color: #F2F2F2;
 }
 .euro-bold {
-    font-weight: bold
+    font-weight: bold;
 }
 .card-star,
 .card-star-grey {
