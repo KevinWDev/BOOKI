@@ -63,10 +63,10 @@ header nav ul {
     padding: 0;
 }
 header nav a {
-    padding-top: 43px;
-}
-header nav li {
-    margin-right: 77px; 
+    padding-top: 42px;
+    display: inline-block;
+    width: 162px;
+    text-align: center;
 }
 header nav a:hover {
     color: #0065FC;
@@ -548,7 +548,7 @@ article {
     .form-filtre {
         padding-left: 20px;
         flex-direction: column;   
-        margin-bottom: 43px;
+        margin-bottom: 26px;
     }
     .form-filtre h2 {
         align-self: flex-start;
@@ -576,8 +576,11 @@ article {
         justify-content: flex-start;
         margin-right: 14px;
     }
+    
     #button-economique,
-    #button-familial {
+    #button-familial,
+    #button-romantique,
+    #button-animaux {
         margin-bottom: 17px;
     }
 
@@ -589,7 +592,7 @@ article {
     .container {
         flex-direction: column-reverse;
         padding: 0;
-        margin-bottom: 105px;
+        margin-bottom: 58px;
     }
 
     /* ----------BALISES GENERAL---------- */
